@@ -18,3 +18,4 @@ redis-data/
 .cache/
 tmp/
 temp/
+logs/*.log

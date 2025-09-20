@@ -8,7 +8,9 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "test": "jest",
-    "test:api": "node test-api.js"
+    "test:api": "node test-api.js",
+    "db:migrate": "node src/db/migrate.js",
+    "db:seed": "node src/db/seed.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.20.0",
@@ -20,7 +22,18 @@
     "dotenv": "^16.3.1",
     "winston": "^3.11.0",
     "node-cron": "^3.0.3",
-    "p-queue": "^7.4.1"
+    "p-queue": "^7.4.1",
+    "sequelize": "^6.35.0",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "ioredis": "^5.3.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "cors": "^2.8.5",
+    "joi": "^17.11.0",
+    "bull": "^4.11.5",
+    "socket.io": "^4.6.0",
+    "compression": "^1.7.4"
   },
   "devDependencies": {
     "nodemon": "^3.0.2",
